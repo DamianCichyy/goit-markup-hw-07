@@ -1,8 +1,42 @@
 @import "./utils/colors";
 @import "./utils/fonts";
+@import "./utils/resets";
+@import "./utils/mixin";
+@import "./utils/transition";
+@import "./components/header";
+@import "./components/index-main";
 
 body {
-  background-color: $primary-background-color;
-  color: $secondary-text-color;
+  color: $primary-text-color;
+  font-weight: map-get($font-weight, regular);
+  font-size: map-get($font-size, primary);
+  letter-spacing: map-get($letter-spacing, primary);
+  font-family: $primary-font;
+}
+
+.wrapper {
+  width: 1600px;
+  @include center;
+}
+
+.container {
+  width: 1200px;
+  @include center;
+  @include padding;
+}
+
+.logo {
+  color: $logo-color;
   font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, logo);
+  line-height: 1.193;
+  font-family: $logo-font;
+}
+
+.logo__color {
+  color: $hover-color;
+}
+
+.section {
+  @include section;
 }

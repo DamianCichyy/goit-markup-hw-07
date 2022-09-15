@@ -1,0 +1,8 @@
+@import "./utils/colors";
+@import "./utils/fonts";
+
+body {
+  background-color: $primary-background-color;
+  color: $secondary-text-color;
+  font-weight: map-get($font-weight, bold);
+}

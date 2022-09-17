@@ -4,13 +4,13 @@
 
   &__container {
     @include flex-row;
-    gap: 93px;
+    gap: map-get($gap, biggest);
   }
 
   &__nav {
     @include flex-row;
     @include nav-links;
-    gap: 46px;
+    gap: map-get($gap, big);
 
     &-color {
       color: $secondary-text-color;
@@ -43,13 +43,13 @@
   &__contacts {
     @include flex-row;
     @include nav-links;
-    gap: 30px;
+    gap: map-get($gap, primary);
     margin-left: auto;
 
     &-color {
       @include flex-row;
       @include transition-fill-color;
-      gap: 10px;
+      gap: map-get($gap, medium);
       color: $primary-text-color;
       fill: $primary-text-color;
 

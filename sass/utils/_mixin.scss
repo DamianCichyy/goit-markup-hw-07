@@ -14,10 +14,15 @@
   padding-bottom: 0;
 }
 
+@mixin our-team-border {
+  border-radius: 0px 0px 4px 4px;
+}
+
 @mixin flex {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 @mixin flex-row {
@@ -40,6 +45,18 @@
 
 @mixin transition-fill-color {
   transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-fill-background-color {
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-fill-border {
+  transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

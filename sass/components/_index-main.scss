@@ -1,6 +1,6 @@
 .main {
   @include flex-column;
-  gap: 30px;
+  gap: map-get($gap, primary);
   background: linear-gradient($gradient-color, $gradient-color),
     url(/images/background.jpg), no-repeat;
   padding: 200px 452px;
@@ -40,11 +40,10 @@
 
 .lorem {
   @include flex-row;
-  gap: 30px;
+  gap: map-get($gap, primary);
 
   &__container {
     @include flex;
-    justify-content: center;
     padding: 25px 100px;
     background-color: $section-background-color;
   }
@@ -59,5 +58,94 @@
 
   &__paragraph {
     line-height: 1.715;
+  }
+}
+
+.what-we-do {
+  @include flex-row;
+  gap: map-get($gap, primary);
+  &__list {
+    position: relative;
+  }
+
+  &__overlay {
+    @include flex;
+    position: absolute;
+    background-color: $dark-overlay-color;
+    color: $header-one-color;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    font-weight: map-get($font-weight, bold);
+    line-height: 1.143;
+    text-transform: uppercase;
+  }
+}
+
+.our-team {
+  @include flex-row;
+  gap: map-get($gap, primary);
+
+  &__list {
+    @include our-team-border;
+    background-color: $primary-background-color;
+    box-shadow: 0px 1px 3px $team-boxshadow-one, 0px 1px 1px $team-boxshadow-two,
+      0px 2px 1px $team-boxshadow-three;
+  }
+
+  &__figcaption {
+    @include flex-column;
+    padding: 30px 0;
+    font-size: map-get($font-size, smaller);
+    line-height: 1.188;
+
+    &-header {
+      font-weight: map-get($font-weight, medium);
+      color: $secondary-text-color;
+      padding-bottom: 10px;
+    }
+
+    &-social {
+      @include flex-row;
+      gap: map-get($gap, medium);
+      padding-top: 16px;
+    }
+
+    &-social-link {
+      @include transition-fill-background-color;
+      width: 44px;
+      height: 44px;
+      fill: $primary-icon-color;
+      border-radius: map-get($border-radius, circle);
+      display: block;
+
+      &:hover,
+      &:focus {
+        fill: $footer-icon-color;
+        background-color: $hover-color;
+      }
+    }
+  }
+}
+
+.our-clients {
+  @include flex-row;
+  gap: map-get($gap, primary);
+
+  &__container {
+    @include flex;
+    @include transition-fill-border;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $primary-icon-color;
+    fill: $primary-icon-color;
+    border-radius: map-get($border-radius, medium);
+
+    &:hover,
+    &:focus {
+      fill: $hover-color;
+      border: 1px solid $hover-color;
+    }
   }
 }

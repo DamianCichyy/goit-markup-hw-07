@@ -1,3 +1,4 @@
+/* Flex */
 @mixin flex-row {
   display: flex;
   flex-direction: row;
@@ -10,8 +11,16 @@
 
 @mixin flex {
   display: flex;
+  align-items: center;
 }
 
+/* Fonts */
+@mixin header-fonts {
+  font-weight: map-get($font-weight, medium);
+  letter-spacing: map-get($letter-spacing, medium);
+}
+
+/* Transition */
 @mixin transition-color {
   transition-property: color;
   transition-duration: 250ms;
@@ -20,6 +29,12 @@
 
 @mixin transition-background-color {
   transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-color-fill {
+  transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -78,11 +78,11 @@
         </div>
       </header>
       <main>
-        <section><div class="container logo">
-          <h1 class="logo__header"></h1>
-          <button class="logo_button"></button>
-        </div>
-
+        <section class="main">
+          <h1 class="main__header">
+            EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
+          </h1>
+          <button class="main__button" data-modal-open>Zamów usługe</button>
         </section>
 
         <section></section>
@@ -94,7 +94,40 @@
         <section></section>
       </main>
       <footer></footer>
-      <script src="./js/modal.js"></script>
     </div>
+
+    <div class="modal-background is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button-exit" data-modal-close>
+          <svg class="modal__button-exit-svg">
+            <use
+              href="images/icons.svg#icon-x"
+              width="12"
+              height="12"
+              x="8"
+              y="8"
+            ></use>
+          </svg>
+        </button>
+
+        <h3 class="modal__header">Zostaw swoje dane w formularzu poniżej</h3>
+        <form class="modal__form">
+          <label for="username" class="modal__form-label"
+            ><p class="modal__form-label-paragraph">Imie</p>
+            <input type="text" class="modal__form-label-input" />
+            <svg class="modal__form-label-svg">
+              <use
+                href="images/icons.svg#icon-person"
+                width="12"
+                height="12"
+                x="3"
+                y="3"
+              ></use>
+            </svg>
+          </label>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -14,16 +14,18 @@ $secondary-background-color: #f5f4fa;
 $third-background-color: #2f303a;
 $button-background-color: #2196f3;
 $button-active-background-color: #1085e2;
-$linear-grdient-background-color: #2f303a66;
+$grdient-background-color: #2f303a66;
 $dark-overlay-background-color: #2f303acc;
 $blue-overlay-background-color: #2196f3e5;
 $footer-links-background-color: #ffffff1a;
+$modal-background-color: #00000033;
 
 /* SVG Color */
 $primary-svg-color: #afb1b8;
 $secondary-svg-color: #212121;
 $header-svg-color: #757575;
-$footer-svg-color: #fff;
+$white-svg: #fff;
+$black-svg: #000;
 
 /* Border Color */
 $primary-border-color: #eeeeee;
@@ -31,6 +33,7 @@ $header-border-color: #ececec;
 $svg-border-color: #afb1b8;
 $footer-input-border-color: #ffffff4d;
 $modal-border-color: #21212133;
+$modal-button-exit-color: #0000001a;
 
 /* Box-Shadow Color */
 $big-buttons-shadow: #00000026;
@@ -43,3 +46,6 @@ $team-shadow-three: #00000033;
 $card-shadow-one: #0000001f;
 $card-shadow-two: #0000000f;
 $card-shadow-three: #00000029;
+$modal-shadow-one: #0000001f;
+$modal-shadow-two: #00000024;
+$modal-shadow-three: #00000033;

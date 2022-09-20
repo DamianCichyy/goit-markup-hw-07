@@ -5,6 +5,7 @@
 @import "./utils/border-radius";
 @import "./components/header";
 @import "./components/index-main";
+@import "./components/modal";
 
 body {
   font-size: map-get($font-size, primary);

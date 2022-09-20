@@ -21,6 +21,18 @@
 }
 
 /* Transition */
+@mixin transition-transform {
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-visibility-opacity {
+  transition-property: visibility, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @mixin transition-color {
   transition-property: color;
   transition-duration: 250ms;
@@ -35,6 +47,12 @@
 
 @mixin transition-color-fill {
   transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-background-color-fill {
+  transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

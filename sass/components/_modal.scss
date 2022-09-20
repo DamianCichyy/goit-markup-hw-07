@@ -102,6 +102,8 @@
         position: absolute;
         top: 29px;
         left: 12px;
+        pointer-events: none;
+        fill: $secondary-svg-color;
       }
     }
   }

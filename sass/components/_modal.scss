@@ -77,6 +77,16 @@
       gap: 4px;
       position: relative;
 
+      &:hover &-input,
+      &:focus-within &-input {
+        border: 1px solid $hover-color;
+      }
+
+      &:hover &-svg,
+      &:focus-within &-svg {
+        fill: $hover-color;
+      }
+
       &-paragraph {
         font-size: map-get($font-size, smallest);
         line-height: map-get($line-height, secondary);
@@ -84,19 +94,17 @@
       }
 
       &-input {
+        @include transition-border;
         border: 1px solid $modal-border-color;
         border-radius: map-get($border-radius, big);
         width: 100%;
         height: 40px;
         padding: 0 32px;
-
-        &:hover,
-        &:focus {
-          border: 1px solid $hover-color;
-        }
+        color: $secondary-font-color;
       }
 
       &-svg {
+        @include transition-fill;
         width: 18px;
         height: 18px;
         position: absolute;
@@ -104,6 +112,46 @@
         left: 12px;
         pointer-events: none;
         fill: $secondary-svg-color;
+      }
+
+      &-textarea {
+        @include transition-border;
+        resize: none;
+        width: 448px;
+        height: 120px;
+        padding: 12px 16px;
+        border: 1px solid $modal-border-color;
+        border-radius: map-get($border-radius, big);
+        color: $secondary-font-color;
+
+        &:hover,
+        &:focus {
+          border: 1px solid $hover-color;
+        }
+      }
+    }
+
+    &-checkbox {
+      @include flex-row;
+      align-items: center;
+      gap: 8px;
+      position: relative;
+      padding: 10px 0 20px 15px;
+
+      &-input {
+        cursor: pointer;
+
+        width: 16px;
+        height: 15px;
+        pointer-events: visible;
+      }
+
+      &-svg {
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 15px;
+        pointer-events: none;
       }
     }
   }

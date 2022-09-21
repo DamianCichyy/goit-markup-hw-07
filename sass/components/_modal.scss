@@ -138,23 +138,52 @@
       position: relative;
       padding: 10px 0 20px 15px;
 
-      $-input:checked $-svg {
+      &-input:checked ~ &-svg {
+        background-color: $hover-color;
         fill: $hover-color;
       }
 
       &-input {
         cursor: pointer;
+        opacity: 0;
         width: 16px;
         height: 15px;
         pointer-events: visible;
       }
 
       &-svg {
+        @include transition-background-color-fill;
         position: absolute;
         display: block;
         width: 16px;
         height: 15px;
         pointer-events: none;
+        border-radius: map-get($border-radius, small);
+        fill: $secondary-svg-color;
+
+        &:hover,
+        &:focus {
+          fill: $hover-color;
+        }
+
+        &-vector {
+          fill: $white-svg;
+        }
+      }
+
+      &-paragraph {
+        line-height: map-get($line-height, big);
+
+        &-links {
+          @include transition-color;
+          text-decoration: underline;
+          color: $hover-color;
+
+          &:hover,
+          &:focus {
+            color: $button-active-background-color;
+          }
+        }
       }
     }
   }

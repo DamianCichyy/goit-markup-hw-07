@@ -138,9 +138,12 @@
       position: relative;
       padding: 10px 0 20px 15px;
 
+      $-input:checked $-svg {
+        fill: $hover-color;
+      }
+
       &-input {
         cursor: pointer;
-
         width: 16px;
         height: 15px;
         pointer-events: visible;

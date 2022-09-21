@@ -186,5 +186,27 @@
         }
       }
     }
+
+    &-button {
+      @include flex;
+      @include transition-background-color;
+      cursor: pointer;
+      font-weight: map-get($font-weight, bold);
+      font-size: map-get($font-size, smaller);
+      line-height: map-get($line-height, bigger);
+      letter-spacing: map-get($letter-spacing, big);
+      color: $third-font-color;
+      margin: 0 auto;
+      background-color: $hover-color;
+      border-style: none;
+      padding: 10px 76px;
+      box-shadow: 0px 4px 4px $big-buttons-shadow;
+      border-radius: map-get($border-radius, big);
+
+      &:hover,
+      &:focus {
+        background-color: $button-active-background-color;
+      }
+    }
   }
 }

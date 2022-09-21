@@ -153,11 +153,11 @@
 
       &-svg {
         @include transition-background-color-fill;
+        cursor: pointer;
         position: absolute;
         display: block;
         width: 16px;
         height: 15px;
-        pointer-events: none;
         border-radius: map-get($border-radius, small);
         fill: $secondary-svg-color;
 

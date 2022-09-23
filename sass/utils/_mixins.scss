@@ -9,6 +9,11 @@
   flex-direction: column;
 }
 
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @mixin flex {
   display: flex;
   align-items: center;
@@ -45,6 +50,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@mixin transition-background-color-color {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @mixin transition-color-fill {
   transition-property: color, fill;
   transition-duration: 250ms;
@@ -71,6 +82,12 @@
 
 @mixin transition-fill {
   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin transition-box-shadow {
+  transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

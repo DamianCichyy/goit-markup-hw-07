@@ -144,11 +144,25 @@
   }
 }
 
-.clients{
+.clients {
   @include flex-row;
-  gap:30px;
+  gap: 30px;
 
-  
+  &__links {
+    @include transition-border-fill;
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $primary-svg-color;
+    fill: $primary-svg-color;
+    border-radius: map-get($border-radius, big);
+
+    &:hover,
+    &:focus {
+      fill: $hover-color;
+      border: 1px solid $hover-color;
+    }
+  }
 }
 
 .secondary-header {

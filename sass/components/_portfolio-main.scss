@@ -34,6 +34,7 @@
 
     &-item {
       @include transition-box-shadow;
+      cursor: pointer;
       position: relative;
       overflow: hidden;
       flex-basis: calc((100% - 60px) / 3);

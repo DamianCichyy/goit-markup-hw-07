@@ -24,7 +24,7 @@
         @include flex-column;
         gap: 9px;
         font-style: normal;
-        line-height: map-get($line-height, big);
+        line-height: map-get($line-height, e);
 
         &-paragraph {
           color: $third-font-color;
@@ -107,8 +107,8 @@
         border-radius: map-get($border-radius, big);
         border-style: none;
         font-weight: map-get($font-weight, bold);
-        font-size: map-get($font-size, smaller);
-        line-height: map-get($line-height, bigger);
+        font-size: map-get($font-size, f);
+        line-height: map-get($line-height, d);
         letter-spacing: map-get($letter-spacing, big);
         color: $third-font-color;
         fill: $white-svg;

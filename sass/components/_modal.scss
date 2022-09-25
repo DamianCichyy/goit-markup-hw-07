@@ -67,8 +67,8 @@
 
   &__header {
     font-weight: map-get($font-weight, bold);
-    font-size: map-get($font-size, medium);
-    line-height: map-get($line-height, thiny);
+    font-size: map-get($font-size, d);
+    line-height: map-get($line-height, i);
     text-align: center;
     color: $secondary-font-color;
     padding-bottom: 12px;
@@ -94,8 +94,8 @@
       }
 
       &-paragraph {
-        font-size: map-get($font-size, smallest);
-        line-height: map-get($line-height, secondary);
+        font-size: map-get($font-size, g);
+        line-height: map-get($line-height, a);
         letter-spacing: map-get($letter-spacing, small);
       }
 
@@ -178,7 +178,7 @@
       }
 
       &-paragraph {
-        line-height: map-get($line-height, big);
+        line-height: map-get($line-height, e);
 
         &-links {
           @include transition-color;
@@ -198,8 +198,8 @@
       @include transition-background-color;
       cursor: pointer;
       font-weight: map-get($font-weight, bold);
-      font-size: map-get($font-size, smaller);
-      line-height: map-get($line-height, bigger);
+      font-size: map-get($font-size, f);
+      line-height: map-get($line-height, d);
       letter-spacing: map-get($letter-spacing, big);
       color: $third-font-color;
       margin: 0 auto;

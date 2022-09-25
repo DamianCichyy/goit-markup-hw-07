@@ -32,3 +32,20 @@ body {
 .section {
   padding: 94px 0;
 }
+
+.secondary-header {
+  font-weight: map-get($font-weight, bold);
+  font-size: map-get($font-size, bigger);
+  line-height: map-get($line-height, secondary);
+  text-align: center;
+  color: $secondary-font-color;
+  padding-bottom: 50px;
+}
+
+.no-padding {
+  padding-bottom: 0;
+}
+
+.section-background {
+  background-color: $secondary-background-color;
+}

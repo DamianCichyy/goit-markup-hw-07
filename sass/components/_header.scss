@@ -16,7 +16,7 @@
       @include header-fonts;
       gap: 46px;
 
-      &-links {
+      &-link {
         @include transition-color;
         color: $secondary-font-color;
         position: relative;
@@ -47,7 +47,7 @@
       gap: 30px;
       margin-left: auto;
 
-      &-links {
+      &-link {
         @include flex;
         @include transition-color-fill;
         gap: 10px;

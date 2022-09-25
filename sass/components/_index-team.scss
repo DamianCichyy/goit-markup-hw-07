@@ -27,7 +27,7 @@
         gap: 10px;
         padding-top: 6px;
 
-        &-links {
+        &-link {
           @include transition-background-color-fill;
           display: block;
           width: 44px;

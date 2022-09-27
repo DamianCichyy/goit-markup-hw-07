@@ -56,8 +56,8 @@
         height: 100%;
         top: 0;
         left: 0;
-        font-size: map-get($font-size, e);
-        line-height: map-get($line-height, f);
+        font-size: map-get($font-size, small);
+        line-height: map-get($line-height, medium);
         color: $third-font-color;
         background-color: $blue-overlay-background-color;
         transform: translateY(100%);
@@ -77,15 +77,15 @@
 
       &-header {
         font-weight: map-get($font-weight, bold);
-        font-size: map-get($font-size, e);
-        line-height: map-get($line-height, c);
+        font-size: map-get($font-size, small);
+        line-height: map-get($line-height, biggest);
         letter-spacing: map-get($letter-spacing, big);
         color: $secondary-font-color;
       }
 
       &-paragraph {
-        font-size: map-get($font-size, f);
-        line-height: map-get($line-height, d);
+        font-size: map-get($font-size, smaller);
+        line-height: map-get($line-height, bigger);
       }
     }
   }

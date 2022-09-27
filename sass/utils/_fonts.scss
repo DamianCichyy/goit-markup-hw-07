@@ -13,27 +13,27 @@ $font-weight: (
 /* Font Size */
 $font-size: (
   "primary": 14px,
-  "a": 44px,
-  "b": 36px,
-  "c": 26px,
-  "d": 20px,
-  "e": 18px,
-  "f": 16px,
-  "g": 12px,
+  "smallest": 12px,
+  "smaller": 16px,
+  "small": 18px,
+  "medium": 20px,
+  "big": 26px,
+  "bigger": 36px,
+  "biggest": 44px,
 );
 
 /* Line Height */
 $line-height: (
   "primary": 1.143,
-  "a": 1.167,
-  "b": 1.364,
-  "c": 2,
-  "d": 1.875,
-  "e": 1.715,  
-  "f": 1.556,
-  "g": 1.193,
-  "h": 1.188,
-  "i": 1.15,
+  "slimmer": 1.15,
+  "slim": 1.167,
+  "smallest": 1.188,
+  "smaller": 1.193,
+  "small": 1.364,
+  "medium": 1.556,
+  "big": 1.715,
+  "bigger": 1.875,
+  "biggest": 2,
 );
 
 /* Letter Spacing */
